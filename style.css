@@ -35,8 +35,19 @@ header{
 header h1 {
     color: rgb(237, 234, 234);
     margin-left: 20px;
-    font-size: 26px auto;
+    font-size: 26vw auto;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* stack nav items vertically */
+    align-items: center;
+  }
+  
+  .nav a {
+    margin: 10px 0; /* spacing between links */
+  }
 }
 
 nav ul {
@@ -217,3 +228,4 @@ footer{
     margin-top: 20px;
 
 }
+

@@ -5,6 +5,24 @@
     font-family: 'Arial', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  .header, .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* For phones */
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 18px;
+  }
+  .menu a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
 header{
     padding: 20px auto;
     background-color:black;
@@ -197,4 +215,5 @@ footer{
     bottom: 0;
     width: 100%;
     margin-top: 20px;
+
 }
